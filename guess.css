@@ -1,0 +1,13 @@
+body {
+    background: linear-gradient(to right, #9AD0EC, #A267AC);
+    /* background-repeat: no-repeat; */
+    background-attachment: fixed;
+ 
+}
+
+/* .container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+} */
+
