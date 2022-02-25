@@ -15,23 +15,29 @@
     <div class="wrapper">
         <div class="container">
             <div class="title text-center py-2"><h2>Guess The Number</h2></div>
-            <div class="info" id="info">
-                <input type="text" class="form-control" id="number">
-                <div class="d-flex justify-content-center">
-                <button type ="button"id="guess-btn" class="btn-lg">Guess</button>
+            <div class="info">
+                <form>
+                    <div class="row">
+                        <div class="d-flex justify-content-center">
+                            <div class="form-group col-md-3">
+                                <input class="form-control number" type="text" id="number" placeholder="Enter a number" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="d-flex justify-content-center py-2">
+                            <button onclick="handleOnClick()" type ="button"id="guess-btn" class="btn-lg">Guess
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <div class="display">
+                    <div class="d-flex justify-content-center">
+                        <div id="display-graphic">
+                            <!-- HTML here from JavaScript -->
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div id="higher-display">
-                <img src="up.jpg" alt="correct" height="300" width="300">
-                <div>HIGHER</div>
-            </div>
-            <div id="lower-display">
-                <img src="down.jpg" alt="lower" height="300">
-                <div>LOWER</div>
-            </div>
-            <div id="correct-display">
-                <img src="correct.jpg" alt="lower" height="300" width="300">
-                <div>Congrats! You are correct!</div>
             </div>
         </div>
     </div>
